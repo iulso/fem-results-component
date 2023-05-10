@@ -1,0 +1,34 @@
+@use '../util' as *;
+
+body {
+  font-family: var(--font-hanken-grotesk);
+  font-weight: 500;
+  font-size: var(--font-size-default);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+h1,
+h2,
+.summary__title {
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  margin-bottom: rem(24);
+  font-size: rem(18);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--links);
+}

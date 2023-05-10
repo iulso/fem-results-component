@@ -1,0 +1,11 @@
+@use '../util' as *;
+
+.footer {
+  margin: rem(30) 0;
+
+  .attribution {
+    text-align: center;
+    font-size: rem(11);
+    color: #292929;
+  }
+}

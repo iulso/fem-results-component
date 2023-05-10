@@ -1,0 +1,128 @@
+@use '../util/' as *;
+
+.summary {
+  max-width: rem(640);
+
+  @include breakpoint-up(medium) {
+    border-radius: rem(20);
+    overflow: hidden;
+    box-shadow: rem(2) rem(10) rem(10) var(--shadow);
+  }
+}
+
+.summary__text,
+.summary__overview {
+  padding: rem(30) rem(40);
+}
+
+.summary__text {
+  border-radius: 0 0 rem(32) rem(32);
+  background: var(--bg-gradient);
+  text-align: center;
+  color: var(--faded);
+
+  @include breakpoint-up(medium) {
+    border-radius: rem(20);
+  }
+}
+
+.summary__score {
+  display: inline-block;
+  margin-bottom: rem(30);
+  border-radius: 50%;
+  width: rem(140);
+  height: rem(140);
+  background: var(--bg-circle);
+
+  &--fraction {
+    padding-top: rem(20);
+    font-weight: 900;
+    font-size: rem(56);
+    letter-spacing: rem(-2);
+    color: var(--white);
+  }
+
+  &--total {
+    font-size: rem(14);
+  }
+
+  @include breakpoint-up(large) {
+    width: rem(180);
+    height: rem(180);
+
+    &--fraction {
+      padding-top: rem(40);
+    }
+  }
+}
+
+.summary__title {
+  font-size: rem(24);
+  color: var(--white);
+}
+
+.summary__overview {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: var(--dark);
+  }
+}
+
+.summary__items {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: rem(16);
+  margin-bottom: rem(30);
+}
+
+.summary__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: rem(10);
+  border-radius: rem(8);
+  padding: rem(16) rem(10);
+
+  &--reaction {
+    background-color: hsla(#{var(--subject-1), 0.05});
+
+    .summary__subject {
+      color: hsl(var(--subject-1));
+    }
+  }
+
+  &--memory {
+    background-color: hsla(#{var(--subject-2), 0.05});
+
+    .summary__subject {
+      color: hsl(var(--subject-2));
+    }
+  }
+
+  &--verbal {
+    background-color: hsla(#{var(--subject-3), 0.05});
+
+    .summary__subject {
+      color: hsl(var(--subject-3));
+    }
+  }
+
+  &--visual {
+    background-color: hsla(#{var(--subject-4), 0.05});
+
+    .summary__subject {
+      color: hsl(var(--subject-4));
+    }
+  }
+}
+
+.summary__points {
+  &--fraction {
+    color: var(--dark);
+  }
+
+  &--total {
+    color: var(--dark-faded);
+  }
+}

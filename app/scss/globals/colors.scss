@@ -1,0 +1,25 @@
+:root {
+  // Primary
+  --subject-1: 0, 100%, 67%;
+  --subject-2: 39, 100%, 56%;
+  --subject-3: 166, 100%, 37%;
+  --subject-4: 234, 85%, 45%;
+  // Gradients
+  --bg-gradient: linear-gradient(
+    225deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  --bg-circle: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  // Neutral
+  --white: hsl(0, 0%, 100%);
+  --faded: hsl(241, 100%, 89%);
+  --dark: hsl(224, 30%, 27%);
+  --dark-faded: hsla(224, 30%, 27%, 0.5);
+  --shadow: hsl(221, 100%, 96%);
+  --links: hsl(252, 100%, 67%);
+}

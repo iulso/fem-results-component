@@ -1,0 +1,24 @@
+@use '../util/' as *;
+
+.content {
+  @include breakpoint-up(medium) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(-80);
+  }
+
+  @include breakpoint-up(large) {
+    margin-top: 0;
+  }
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
