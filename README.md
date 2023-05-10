@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [click here](https://iulso.github.io/fem-summary-component/)
+- Live Site URL: [click here](https://iulso.github.io/fem-results-component/)
 
 ## My process
 
